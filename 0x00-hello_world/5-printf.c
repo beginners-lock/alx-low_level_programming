@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/*
- * main - Entry function
- * Return - always return 0
- * Description - prints statement
+/**
+ *main - Entry function
+ *Description: 'prints stuff'
+ *Return: Always 0 (Success)
  */
 
 int main(void)
