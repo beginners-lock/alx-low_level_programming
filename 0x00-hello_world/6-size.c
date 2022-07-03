@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry function
- * Return -always returns 0
- * Description - print sizes of variables
+ * Description: 'the program prints sizes of variables'
+ * Return: Always 0 (Success)
  */
 
 int main(void)

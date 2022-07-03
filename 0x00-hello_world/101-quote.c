@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry function
- * return - always return 1
- * description - print out quote
+ * Description: 'print quote in stderr'
+ * Return: Always 1
  */
 
 int main(void)
