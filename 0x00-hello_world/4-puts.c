@@ -2,6 +2,7 @@
 
 /*
 *main - Entry function
+*Description: 'prints statement'
 *Return: Always return 0
 */
 
