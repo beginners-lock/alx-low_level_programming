@@ -1,11 +1,9 @@
 #include <stdio.h>
-
-/*
-*main - Entry function
-*Description: 'prints statement'
-*Return: Always return 0
-*/
-
+/**
+ * main - Entry point
+ * Description: 'prints stuff'
+ * Return: Always 0 (sucess)
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
