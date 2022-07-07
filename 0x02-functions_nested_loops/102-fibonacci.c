@@ -18,8 +18,8 @@ int main(void)
 	for (x = 0; x < 50; x++)
 	{
 		sum = a + b;
-		b = a;
-		a = sum;
+		a = b;
+		b = sum;
 		printf(", %d", sum);
 	}
 
