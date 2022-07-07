@@ -2,7 +2,8 @@
 
 /**
  * mul - Function
- * @a & @b: as int
+ * @a: as int
+ * @b: as int
  * Description: multiply two integers
  * Return: Always 0
  */
