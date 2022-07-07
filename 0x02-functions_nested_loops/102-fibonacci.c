@@ -10,11 +10,12 @@ int main(void)
 {
 	int a = 1;
 	int b = 2;
+	int x;
 	int sum;
 
 	printf("%d, %d", a, b);
 
-	for (int x = 0; x < 50; x++)
+	for (x = 0; x < 50; x++)
 	{
 		sum = a + b;
 		b = a;
