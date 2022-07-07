@@ -8,19 +8,19 @@
 
 int main(void)
 {
-	long int a = 1;
-	long int b = 2;
+	unsigned long int a = 1;
+	unsigned long int b = 2;
 	int x;
-	long int sum;
+	unsigned long int sum;
 
-	printf("%ld, %ld", a, b);
+	printf("%lu, %lu", a, b);
 
 	for (x = 0; x < 96; x++)
 	{
 		sum = a + b;
 		a = b;
 		b = sum;
-		printf(", %ld", sum);
+		printf(", %lu", sum);
 	}
 
 	printf("\n");
