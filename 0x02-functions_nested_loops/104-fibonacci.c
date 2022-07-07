@@ -9,14 +9,14 @@
 int main(void)
 {
 	unsigned long int a, b, c, d, x, y;
-	int x;
+	int i;
 
 	a = 1;
 	b = 2;
 
 	printf("%lu", a);
 
-	for (x = 1; x < 91; x++)
+	for (i = 1; i < 91; i++)
 	{
 		printf(", %lu", b);
 		b = b + a;
@@ -28,7 +28,7 @@ int main(void)
 	x = b / 1000000000;
 	y = b / 1000000000;
 
-	for (x = 92; x < 99; ++x)
+	for (i = 92; i < 99; ++i)
 	{
 		printf(", %lu", x + (y / 1000000000));
 		printf("%lu", y % 1000000000);
