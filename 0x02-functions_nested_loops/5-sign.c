@@ -4,7 +4,7 @@
  * print_sign - Entry function
  * @i: number as int
  * Description: prints the sign of the number
- * Return: 1 if i is greater than zero, 0 if i is zero, -1 if i is less than zero
+ * Return: 1 if i is > zero, 0 if i is zero, -1 if i is < zero
  */
 
 int print_sign(int i)
