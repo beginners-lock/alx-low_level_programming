@@ -8,20 +8,36 @@
 
 int main(void)
 {
-	unsigned long int a = 1;
-	unsigned long int b = 2;
+	unsigned long int a, b, c, d, x, y;
 	int x;
-	unsigned long int sum;
 
-	printf("%lu, %lu", a, b);
+	a = 1;
+	b = 2;
 
-	for (x = 0; x < 96; x++)
+	printf("%lu", a);
+
+	for (x = 1; x < 91; x++)
 	{
-		sum = a + b;
-		a = b;
-		b = sum;
-		printf(", %lu", sum);
+		printf(", %lu", b);
+		b = b + a;
+		a = b - a;
 	}
+
+	c = a / 1000000000;
+	d = a % 1000000000;
+	x = b / 1000000000;
+	y = b / 1000000000;
+
+	for (x = 92; x < 99; ++x)
+	{
+		printf(", %lu", x + (y / 1000000000));
+		printf("%lu", y % 1000000000);
+		x = x + c;
+		c = x - c;
+		y = y + d;
+		d = y - d;
+	}
+
 
 	printf("\n");
 	return (0);
