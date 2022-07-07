@@ -13,7 +13,7 @@ int main(void)
 	int x;
 	long int sum;
 
-	printf("%d, %d", a, b);
+	printf("%ld, %ld", a, b);
 
 	for (x = 0; x < 50; x++)
 	{
