@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_number - print integer
+ * print_number - print int
  * @n: integer
  * Return: void
  */
