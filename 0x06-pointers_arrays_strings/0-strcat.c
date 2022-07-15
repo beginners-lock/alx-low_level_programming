@@ -21,8 +21,8 @@ char *_strcat(char *dest, char *src)
 		*(dest + count) = *(src + count1);
 		if (*(src + count1) == '\0')
 			break;
-		count++;
 		count1++;
+		count++;
 	}
 	return (dest);
 }
