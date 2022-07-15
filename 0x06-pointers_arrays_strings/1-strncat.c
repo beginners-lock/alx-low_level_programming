@@ -5,9 +5,8 @@
  * @dest: destination
  * @src: source
  * @n: amount of bytes
- * Return: returns dest
+ * Return: dest
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
 	int count = 0, count1 = 0;
@@ -22,8 +21,8 @@ char *_strncat(char *dest, char *src, int n)
 		*(dest + count) = *(src + count1);
 		if (*(src + count1) == '\0')
 			break;
-    count1++;
 		count++;
+		count1++;
 	}
 	return (dest);
 }
