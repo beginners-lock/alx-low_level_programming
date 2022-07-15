@@ -2,7 +2,7 @@
 
 /**
  * rot13 - encodes a string
- * @s: string
+ * @s: str
  * Return: returns dest
  */
 char *rot13(char *s)
