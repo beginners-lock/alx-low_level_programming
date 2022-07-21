@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * prime_funct - prime number
+ * oh_prime - prime number
  * @x: input number
  * @y: iterator
- * Return: 1 if prime and 0 if not
+ * Return: 1 if prime else 0
  */
 
-int prime_funct(unsigned int x, unsigned int y)
+int oh_prime(unsigned int x, unsigned int y)
 {
 	if (x % y == 0)
 	{
@@ -20,9 +20,9 @@ int prime_funct(unsigned int x, unsigned int y)
 }
 
 /**
- * is_prime_number - checks if integer n is a prime number
+ * is_prime_number - is a prime number,
  * @n: input number
- * Return: 1 if the input integer is a prime number else returns 0
+ * Return: 1 if the input integer is a prime number, otherwise return 0
  */
 
 int is_prime_number(int n)
