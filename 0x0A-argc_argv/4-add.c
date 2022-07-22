@@ -4,18 +4,17 @@
 
 /**
  * main - adds positive numbers
- * @argc: argv array length 
+ * @argc: argv array length
  * @argv: array of arguments
  * Return: 0
  */
-
 int main(int argc, char *argv[])
 {
 	int x, y, add = 0;
 
 	for (x = 1; x < argc; x++)
 	{
-		for (x = 0; argv[x][y] != '\0'; y++)
+		for (y = 0; argv[x][y] != '\0'; y++)
 		{
 			if (!isdigit(argv[x][y]))
 			{
