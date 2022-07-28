@@ -12,7 +12,7 @@ char *str_concat(char *s1, char *s2)
 {
 	char *strout;
 	unsigned int a, b, x, y;
-	
+
 	if (s2 == NULL)
 		s2 = "";
 	if (s1 == NULL)
