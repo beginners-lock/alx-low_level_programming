@@ -3,8 +3,8 @@
 
 /**
  * create_array - creates an array of chars
- * @size: size of the array
  * @c: storaged of chars
+ * @size: size of the array
  * Return: pointer of an array chars
  */
 
