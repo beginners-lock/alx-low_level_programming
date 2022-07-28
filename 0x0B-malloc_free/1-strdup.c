@@ -9,7 +9,6 @@
 
 char *_strdup(char *str)
 {
-  
 	unsigned int x, y;
 	char *strout;
 
