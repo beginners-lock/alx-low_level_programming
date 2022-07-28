@@ -43,7 +43,7 @@ char *argstostr(int ac, char **av)
 			y = 0;
 		}
 		if (z < c - 1)
-			aout[z] = av[x][u];
+			aout[z] = av[x][y];
 	}
 	aout[z] = '\0';
 
