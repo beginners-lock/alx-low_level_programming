@@ -3,10 +3,9 @@
 /**
  * print_all - prints anything
  * @format: list of types of argument
- * Description: function prints anything
+ *
  * Return: void
  */
-
 void print_all(const char * const format, ...)
 {
 	va_list valist;
