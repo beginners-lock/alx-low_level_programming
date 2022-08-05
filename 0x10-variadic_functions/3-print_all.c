@@ -3,6 +3,7 @@
 /**
  * print_all - prints anything
  * @format: list of types of argument
+ * Description: prints anything
  * Return: void
  */
 
@@ -10,7 +11,7 @@ void print_all(const char * const format, ...)
 {
 	va_list valist;
 	unsigned int i = 0, j, k = 0;
-	char *c;
+	char *str;
 	const char t_arg[] = "cifs";
 
 	va_start(valist, format);
@@ -38,13 +39,13 @@ void print_all(const char * const format, ...)
 			printf("%f", va_arg(valist, double)), k = 1;
 			break;
 		case 's':
-			c = va_arg(valist, char *), k = 1;
-			if (!c)
+			str = va_arg(valist, char *), k = 1;
+			if (!str)
 			{
 				printf("(nil)");
 				break;
 			}
-			printf("%s", c);
+			printf("%s", str);
 			break;
 		}
 		i++;
