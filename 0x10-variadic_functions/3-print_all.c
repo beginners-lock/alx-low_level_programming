@@ -3,51 +3,52 @@
 /**
  * print_all - prints anything
  * @format: list of types of argument
- *
+ * Description: prints anything
  * Return: void
  */
+
 void print_all(const char * const format, ...)
 {
 	va_list valist;
-	unsigned int i = 0, j, c = 0;
-	char *str;
+	unsigned int x = 0, y, z = 0;
+	char *c;
 	const char t_arg[] = "cifs";
 
 	va_start(valist, format);
-	while (format && format[i])
+	while (format && format[x])
 	{
-		j = 0;
-		while (t_arg[j])
+		y = 0;
+		while (t_arg[y])
 		{
-			if (format[i] == t_arg[j] && c)
+			if (format[x] == t_arg[y] && z)
 			{
 				printf(", ");
 				break;
 			}
-			j++;
+			y++;
 		}
-		switch (format[i])
+		switch (format[x])
 		{
 		case 'c':
-			printf("%c", va_arg(valist, int)), c = 1;
+			printf("%c", va_arg(valist, int)), z = 1;
 			break;
 		case 'i':
-			printf("%d", va_arg(valist, int)), c = 1;
+			printf("%d", va_arg(valist, int)), z = 1;
 			break;
 		case 'f':
-			printf("%f", va_arg(valist, double)), c = 1;
+			printf("%f", va_arg(valist, double)), z = 1;
 			break;
 		case 's':
-			str = va_arg(valist, char *), c = 1;
-			if (!str)
+			c = va_arg(valist, char *), z = 1;
+			if (!z)
 			{
 				printf("(nil)");
 				break;
 			}
-			printf("%s", str);
+			printf("%s", z);
 			break;
 		}
-		i++;
+		x++;
 	}
 	printf("\n"), va_end(valist);
 }
