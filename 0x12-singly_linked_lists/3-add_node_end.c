@@ -4,15 +4,15 @@
  * add_node_end - add a new node at the end
  * @head: head of the linked list
  * @str: string
- * Description: add new node to the edn of list_t
+ * Description: add a new node to the end of list_t
  * Return: address of the head
  */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-  size_t nchar;
 	list_t *new;
 	list_t *temp;
+	size_t nchar;
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
