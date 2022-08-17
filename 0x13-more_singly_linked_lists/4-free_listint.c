@@ -3,7 +3,7 @@
 /**
  * free_listint - frees a listint_t list
  * @head: head of list
- * Description: frees listint_t list 
+ * Description: frees listint_t list
  * Return: void
  */
 
