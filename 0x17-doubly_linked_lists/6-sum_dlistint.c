@@ -5,11 +5,11 @@
  * @head: header of double linked list
  * Return: the sum of all nodes
  */
- 
+
 int sum_dlistint(dlistint_t *head)
 {
 	dlistint_t *headcopy;
-	int total = 0;
+	int sum = 0;
 
 	headcopy = head;
 	if (headcopy != NULL)
@@ -19,10 +19,10 @@ int sum_dlistint(dlistint_t *head)
 
 		while (headcopy != NULL)
 		{
-			total += headcopy->n;
+			sum += headcopy->n;
 			headcopy = headcopy->next;
 		}
-		return (total);
+		return (sum);
 	}
 	else
 		return (0);
